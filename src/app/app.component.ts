@@ -15,12 +15,4 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.acountsList = this.accountService.accounts;
   }
-
-  onAccountAdded(newAccount: { name: string; status: string }) {
-    //this.accounts.push(newAccount);
-  }
-
-  onStatusChanged(updateInfo: { id: number; newStatus: string }) {
-    //this.accounts[updateInfo.id].status = updateInfo.newStatus;
-  }
 }
